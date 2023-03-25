@@ -1,10 +1,10 @@
+import 'package:fliqs_app/presentation/home/home_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../utils/app_colors.dart';
-import '../home/home_page.dart';
-import '../widget/bottom_bar.dart';
+import '../../constants/app_colors.dart';
+import '../widgets/bottom_bar.dart';
 
 class MainRoutePage extends StatefulWidget {
   MainRoutePage({Key? key}) : super(key: key);
@@ -98,12 +98,7 @@ class _MainRoutePageState extends State<MainRoutePage>
             controller: tabController,
             dragStartBehavior: DragStartBehavior.down,
             physics: const BouncingScrollPhysics(),
-            children: const [
-              HomePage(),
-              HomePage(),
-              HomePage(),
-              HomePage(),
-            ],
+            children: const [HomePage(), HomePage(), HomePage(), HomePage()],
           ),
           child: Stack(
             alignment: Alignment.center,
@@ -166,7 +161,7 @@ class _MainRoutePageState extends State<MainRoutePage>
                       'assets/images/msg_unselect.png',
                       scale: 2.5,
                     ),
-              const Text("Messages",
+              const Text("Chats",
                   style: TextStyle(
                       color: Color(0xffffffff),
                       fontWeight: FontWeight.w400,
@@ -193,7 +188,7 @@ class _MainRoutePageState extends State<MainRoutePage>
                       'assets/images/msg_unselect.png',
                       scale: 2.5,
                     ),
-              const Text("Questionnaire",
+              const Text("Communities",
                   style: TextStyle(
                       color: Color(0xffffffff),
                       fontWeight: FontWeight.w400,
@@ -220,7 +215,7 @@ class _MainRoutePageState extends State<MainRoutePage>
                       'assets/images/doc_unselect.png',
                       scale: 2.5,
                     ),
-              const Text("To Do’s",
+              const Text("Account",
                   style: TextStyle(
                       color: Color(0xffffffff),
                       fontWeight: FontWeight.w400,

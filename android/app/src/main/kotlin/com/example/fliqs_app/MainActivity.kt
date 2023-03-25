@@ -1,4 +1,4 @@
-package com.example.flutter_fliqs
+package com.example.fliqs_app
 
 import io.flutter.embedding.android.FlutterActivity
 
