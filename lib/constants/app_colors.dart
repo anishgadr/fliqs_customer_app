@@ -22,4 +22,6 @@ abstract class AppColors {
   static const Color searchHint = Color(0x80000000);
   static const Color tabTextColor = Color(0xcc110000);
   static const Color conborderColor = Color(0x26d1dae5);
+  static const Color pureBlack = Color(0xFF000000);
+  static const Color bottomNav = Color(0xFF262626);
 }

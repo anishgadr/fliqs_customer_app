@@ -82,7 +82,7 @@ class _MainRoutePageState extends State<MainRoutePage>
           curve: Curves.decelerate,
           showIcon: true,
           width: MediaQuery.of(context).size.width * 0.9,
-          barColor: AppColors.textNavyBlue,
+          barColor: AppColors.bottomNav,
           start: 2,
           end: 0,
           bottom: 10,
