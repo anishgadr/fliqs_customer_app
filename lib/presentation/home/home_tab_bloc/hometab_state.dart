@@ -10,8 +10,10 @@ class HometabInitial extends HometabState {
 }
 
 class HometabSuccess extends HometabState {
+  final HomeTab homtab;
+  HometabSuccess({required this.homtab});
   @override
-  List<Object> get props => [];
+  List<Object> get props => [homtab];
 }
 
 class HometabLoading extends HometabState {
@@ -20,6 +22,8 @@ class HometabLoading extends HometabState {
 }
 
 class HometabFailure extends HometabState {
+  final String errMsg;
   @override
-  List<Object> get props => [];
+  HometabFailure({required this.errMsg});
+  List<Object> get props => [errMsg];
 }
